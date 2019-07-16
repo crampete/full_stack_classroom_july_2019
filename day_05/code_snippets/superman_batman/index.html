@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <button onclick="goSuperman()">Go Superman!</button>
+      <button onclick="goBatman()">Go Batman!</button>
+    </div>
+    <script>
+      // There are better ways to switch themes.
+      // I want to demonstrate DOM maniupalation in
+      // depth and hence this approach
+      var goSuperman = function() {
+        console.log("You chose Superman. Nice choice.");
+      };
+
+      var goBatman = function() {
+        console.log("You chose Batman. Nice choice.");
+      };
+    </script>
+  </body>
+</html>
