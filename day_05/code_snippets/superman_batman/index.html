@@ -4,22 +4,62 @@
     <meta charset="UTF-8" />
     <title>Theme Switcher</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div>
-      <button onclick="goSuperman()">Go Superman!</button>
-      <button onclick="goBatman()">Go Batman!</button>
+  <body class="container">
+    <div id="heading-holder">
+      <h1>Choose a Theme :)</h1>
+    </div>
+    <div id="buttons-holder">
+      <button class="button" onclick="goSuperman()">Superman</button>
+      <button class="button" onclick="goBatman()">Batman</button>
     </div>
     <script>
       // There are better ways to switch themes.
       // I want to demonstrate DOM maniupalation in
       // depth and hence this approach
+      // We could write some JavaScript to swap stylesheets or inject a new stylesheet
+
       var goSuperman = function() {
         console.log("You chose Superman. Nice choice.");
+
+        // container ffd460
+        document.getElementsByClassName("container")[0].style.backgroundColor =
+          "#ffd460";
+
+        // get all buttons first
+        var buttons = document.getElementsByClassName("button");
+
+        for (var i = 0; i < buttons.length; i++) {
+          // changing background colour
+          buttons[i].style.backgroundColor = "#0099f7";
+          // changing text colour
+          buttons[i].style.color = "#000";
+        }
+
+        // heading color #ea5455
+        document.getElementById("heading-holder").style.color = "#ea5455";
       };
 
       var goBatman = function() {
         console.log("You chose Batman. Nice choice.");
+        // container #505c7c
+        document.getElementsByClassName("container")[0].style.backgroundColor =
+          "#505c7c";
+        // get all buttons first
+        var buttons = document.getElementsByClassName("button");
+
+        for (var i = 0; i < buttons.length; i++) {
+          // changing background colour
+          buttons[i].style.backgroundColor = "#242424";
+          // changing text colour
+          buttons[i].style.color = "#988829";
+        }
+        // heading color #fdff00
+        document.getElementById("heading-holder").style.color = "#fdff00";
       };
     </script>
   </body>
