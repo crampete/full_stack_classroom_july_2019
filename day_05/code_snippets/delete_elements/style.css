@@ -1,0 +1,38 @@
+body {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #f9f7f7;
+}
+
+#heading-holder {
+  text-align: center;
+  color: #112d4e;
+  font-family: "Rubik", sans-serif;
+}
+
+#buttons-holder {
+  text-align: center;
+}
+
+.deletable {
+  text-align: center;
+  color: #112d4e;
+  font-family: "Rubik", sans-serif;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  color: #af3f52;
+  background-color: #ece0e0;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
