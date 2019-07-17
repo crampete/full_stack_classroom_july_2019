@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text Resize</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <div id="heading-holder">
+      <h1>Adjustable Text</h1>
+    </div>
+    <div id="buttons-holder">
+      <button class="button" onclick="makeSmaller()">-</button>
+      <button class="button" onclick="makeLarger()">+</button>
+    </div>
+    <h3 id="size-display"></h3>
+    <p id="target-text">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum."
+    </p>
+    <script>
+      // Initially setting it to 24px
+      var size = 24;
+
+      document.getElementById("target-text").style.fontSize = size + "px";
+
+      // displaying initial size just above it
+      document.getElementById("size-display").innerText = size + "px";
+
+      var makeSmaller = function() {
+        console.log("Making it smaller");
+        if (size > 9) size--;
+
+        // changing the CSS of the paragraph
+        document.getElementById("target-text").style.fontSize = size + "px";
+
+        // Writing the new size to the screen
+        document.getElementById("size-display").innerText = size + "px";
+      };
+
+      var makeLarger = function() {
+        console.log("Making it larger");
+
+        if (size < 50) size++;
+
+        // changing the CSS of the paragraph
+        document.getElementById("target-text").style.fontSize = size + "px";
+
+        // Writing the new size to the screen
+        document.getElementById("size-display").innerText = size + "px";
+      };
+    </script>
+  </body>
+</html>
