@@ -14,10 +14,10 @@
       <h1>Simple Form Validation</h1>
     </div>
 
-    <form id="validation-form">
+    <form id="validation-form" onsubmit="validateForm(event)">
       <div>
         <label>Name</label>
-        <input type="text" placeholder="Your Name Please" />
+        <input type="text" placeholder="Your Name Please" id="name-input" />
       </div>
       <button class="button" type="submit">Submit</button>
     </form>
