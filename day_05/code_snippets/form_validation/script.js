@@ -2,11 +2,16 @@
 // functions are first class objects in JavaScript :)
 // var validateForm = function(e) {}
 function validateForm(e) {
+  // we prevent the form from getting submitted
   e.preventDefault();
   var name = document.getElementById("name-input").value;
 
   if (name === "" || hasNumber(name)) {
     alert("Name cannot be empty and cannot contain numbers");
+  } else {
+    alert("Success :)");
+    // clear input box so that they can submit again
+    document.getElementById("name-input").value = "";
   }
 }
 

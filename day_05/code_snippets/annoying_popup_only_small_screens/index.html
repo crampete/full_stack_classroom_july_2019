@@ -19,6 +19,18 @@
       <b> ONLY IF </b>your screen width is less than 400px wide.
     </p>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      function showPopup() {
+        // if acutal width of the DOM is less than 400px
+        // show annoying popups.
+        if (window.innerWidth < 400) {
+          alert("Annoying popup");
+        }
+      }
+
+      // setInterval ensure that this function
+      // runs every 1.5 seconds
+      setInterval(showPopup, 1500);
+    </script>
   </body>
 </html>

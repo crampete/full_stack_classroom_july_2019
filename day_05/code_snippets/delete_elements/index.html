@@ -22,8 +22,21 @@
     <div class="deletable"><h3>This Gets Deleted One by One</h3></div>
 
     <div id="buttons-holder">
-      <button class="button" type="submit">Delete</button>
+      <button class="button" onclick="deleteItem()">Delete</button>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      function deleteItem() {
+        // Getting all DOM nodes with the classname "deletable"
+        var allDeletableElements = document.getElementsByClassName("deletable");
+
+        // if there are any more elements left delete
+        // the first one from the list
+        if (allDeletableElements.length) {
+          allDeletableElements[0].remove();
+        } else {
+          alert("Nothing left to delete.");
+        }
+      }
+    </script>
   </body>
 </html>
