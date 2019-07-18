@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-button {
+#add-todo {
   height: 30px;
   width: 100px;
   border-radius: 10px;
@@ -47,4 +47,34 @@ form input {
   background-color: transparent;
   text-align: center;
   font-family: "Karla", sans-serif;
+}
+
+.rubik {
+  font-family: "Karla", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#pending-todo-holder {
+  max-width: 400px;
+  margin: auto;
+}
+
+#pending-todo-ul {
+  list-style: none;
+}
+
+ul li span {
+  float: right;
+  /* font-size: 1.5rem; */
+  font-weight: 900;
+  cursor: pointer;
+  color: #78af3f;
 }
