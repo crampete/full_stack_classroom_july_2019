@@ -15,8 +15,12 @@
 
 ### Hands On
 
+Code can be found in the `day_05` folder.
+
 ![](media/day_05.gif)
 
 ## Day 6
 
 ### Overview
+
+### Hands On
