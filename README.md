@@ -2,25 +2,20 @@
 
 ### Batch - July, 2019
 
-## Highlights
-
-- Topics covered each class
-- Class notes and homeworks assignments
-- All learning resources shared are put up here
-- Code snippets and live coding sessions from class
-
-## Day 5
-
-### Overview
-
-### Hands On
-
-Code can be found in the `day_05` folder.
+Homework, resources, code snippets, live projects and learning hacks can be found in the respective day folders.
 
 ![](media/day_05.gif)
 
-## Day 6
+## Index
 
-### Overview
+- Day 5  
+  ![](media/day_05_resized.gif)
+  - [Overview](#day-5-overview)
+  - [Homework]()
+  - [Logistics]()
+  - [Resources and Learning Hacks]()
+  - [Code]()
 
-### Hands On
+## Day 5 Overview
+
+## Day 6 Overview
