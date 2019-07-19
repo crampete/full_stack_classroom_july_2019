@@ -2,7 +2,8 @@
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-#define LED D4 // Led in NodeMCU at pin GPIO16 (D0).
+// constant provided by the SDK
+#define LED D4
 
 
 const char* ssid = "BRAIN_VALLEY01";
