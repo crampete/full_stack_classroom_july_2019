@@ -1,7 +1,5 @@
 # Crampete Full Stack Classroom
 
-<a href="https://chat.whatsapp.com/DvCfBbSJnzD938IUjmvJeB">Join Group</a>
-
 
 ### Batch - July, 2019
 
