@@ -41,3 +41,8 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Homework what is to be done, FreeCodeCamp, YouTube videos etc.
 
 ### Day 6
+- Functions and Classes in depth.
+- `document.getElementsByTagName()`, `document.getElementsById` demystified.
+- Superman Batman Theme Switcher project (see code_snippets_project).
+- Step through using Google Chrome's console and seeing the changes live.
+- Text Resizer run down in a similar fasion.
