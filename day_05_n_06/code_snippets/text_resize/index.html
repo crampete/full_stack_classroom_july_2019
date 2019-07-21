@@ -36,7 +36,7 @@
       // displaying initial size just above it
       document.getElementById("size-display").innerText = size + "px";
 
-      var makeSmaller = function() {
+      function makeSmaller() {
         console.log("Making it smaller");
         if (size > 9) size--;
 
@@ -45,9 +45,10 @@
 
         // Writing the new size to the screen
         document.getElementById("size-display").innerText = size + "px";
-      };
+      }
 
-      var makeLarger = function() {
+      // var makeLarger = function() {
+      function makeLarger() {
         console.log("Making it larger");
 
         if (size < 50) size++;
@@ -57,7 +58,7 @@
 
         // Writing the new size to the screen
         document.getElementById("size-display").innerText = size + "px";
-      };
+      }
     </script>
   </body>
 </html>
