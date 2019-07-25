@@ -4,21 +4,31 @@
 
 Homework, resources, code snippets, live projects and learning hacks can be found in the respective day folders.
 
-![](media/day_05_n_06.gif)
+![](media/day_07.gif)
+
+## About
+
+- [Extra Resources](extra-resources.md)
+- [Project Selection](project-selection.md)
+- [Goals](goals.md)
 
 ## Index
 
 - Day 5 & Day 6
 
-![](media/day_05_n_06_resized.gif)
+  ![](media/day_05_n_06_resized.gif)
 
-- [Overview](#day-5---6-overview)
-- [Homework](day_05_n_06/homework.md)
-- [Logistics](day_05_n_06/logistics.md)
-- [Resources and Learning Hacks](day_05_n_06/resources-learning-hacks.md)
-- [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_05_n_06)
+  - [Overview](#day-5---6-overview)
+  - [Homework](day_05_n_06/homework.md)
+  - [Logistics](day_05_n_06/logistics.md)
+  - [Resources and Learning Hacks](day_05_n_06/resources-learning-hacks.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_05_n_06)
 
 - Day 7
+
+  ![](media/day_07_resized.gif)
+
+  - [Overview](#day-7-overview)
 
 ## Day 5 & 6 Overview
 
@@ -45,7 +55,9 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 ### Day 6
 
 - Functions and Classes in depth.
-- `document.getElementsByTagName()`, `document.getElementsById` demystified.
+- `document.getElementsByTagName()`, `document.getElementsById()` demystified.
 - Superman Batman Theme Switcher project (see code_snippets_project).
 - Step through using Google Chrome's console and seeing the changes live.
 - Text Resizer run down in a similar fasion.
+
+## Day 7 Overview
