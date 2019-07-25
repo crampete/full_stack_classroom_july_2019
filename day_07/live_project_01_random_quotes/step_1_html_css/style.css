@@ -1,0 +1,55 @@
+/* Always prefer rem and em over font sizes */
+
+body {
+  background-color: #ff9c91;
+  font-family: "Rubik", sans-serif;
+  color: #1c2938;
+}
+
+#quote-holder {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: #f4f6f6;
+  min-height: 300px;
+  border-radius: 10px;
+  padding: 30px;
+
+  position: relative;
+}
+
+#quote-text {
+  font-family: "Rubik", sans-serif;
+  line-height: 36px; /* Prefer using rem and em instead of pixels */
+  font-size: 24px;
+}
+
+#quote-author {
+  text-align: right;
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+}
+
+#button-holder {
+  position: absolute;
+  bottom: 25px;
+
+  /* The below three properties are for centering the button */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#random-button {
+  background-color: #cd3f3e;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  min-height: 40px;
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+}

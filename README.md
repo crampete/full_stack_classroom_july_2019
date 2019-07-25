@@ -12,11 +12,13 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 
 ![](media/day_05_n_06_resized.gif)
 
-- [Overview](#day-5-&-6-overview)
+- [Overview](#day-5---6-overview)
 - [Homework](day_05_n_06/homework.md)
 - [Logistics](day_05_n_06/logistics.md)
 - [Resources and Learning Hacks](day_05_n_06/resources-learning-hacks.md)
 - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_05_n_06)
+
+- Day 7
 
 ## Day 5 & 6 Overview
 
@@ -41,6 +43,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Homework what is to be done, FreeCodeCamp, YouTube videos etc.
 
 ### Day 6
+
 - Functions and Classes in depth.
 - `document.getElementsByTagName()`, `document.getElementsById` demystified.
 - Superman Batman Theme Switcher project (see code_snippets_project).

@@ -1,0 +1,55 @@
+body {
+  background-color: #dff0ea;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  font-family: "Karla", sans-serif;
+}
+
+#controls {
+  margin-top: 5%;
+  text-align: center;
+}
+
+#controls label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#controls input {
+  border: 3px #574f7d solid;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#controls button {
+  background-color: #574f7d;
+  color: #dff0ea;
+  border: none;
+  border-radius: 3px;
+  width: 50px;
+}
+
+.control-box {
+  text-align: center;
+  margin: 15px;
+}
+
+#display {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#target {
+  width: 150px;
+  height: 150px;
+  background-color: #95adbe;
+  text-align: center;
+  margin: auto;
+}
