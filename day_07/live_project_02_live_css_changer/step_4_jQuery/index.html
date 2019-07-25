@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>Live CSS Changer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="controls">
+        <h1>Controls</h1>
+        <div id="height-control" class="control-box">
+          <label>Height</label>
+          <input value="150px" name="height" onchange="handleCSSChange(this)" />
+        </div>
+        <div id="width-control" class="control-box">
+          <label>Width</label>
+          <input value="150px" name="width" onchange="handleCSSChange(this)" />
+        </div>
+        <div id="bg-control" class="control-box">
+          <label>Background Colour</label>
+          <input
+            value="#95adbe"
+            name="background-color"
+            onchange="handleCSSChange(this)"
+          />
+        </div>
+      </div>
+      <div id="display">
+        <h1>Display</h1>
+        <div id="target"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

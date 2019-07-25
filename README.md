@@ -29,6 +29,9 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   ![](media/day_07_resized.gif)
 
   - [Overview](#day-7-overview)
+  - [Homework](day_07/homework.md)
+  - [Logistics](day_07/logistics.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_07)
 
 ## Day 5 & 6 Overview
 
