@@ -5,7 +5,8 @@
   // stability. Dont' worry too much about this
   "use strict";
 
-  var addHeading = function() {
+//   var addHeading = function() {
+  function addHeading() {
     var newDivToAdd = document.createElement("div");
     // adding relevant CSS class to the div
     newDivToAdd.classList.add("addable");
