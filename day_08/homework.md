@@ -1,3 +1,3 @@
 - Go through problems in the `python-practice` folder.
-- Finish how much ever possible https://www.youtube.com/watch?v=rfscVS0vtbw. Preferably code along or just watch.
+- Finish how much ever possible https://www.youtube.com/watch?v=rfscVS0vtbw. Preferably code along, if there's no time for that atleast try watching.
 - [Small Python Exercises](https://www.practicepython.org/)
