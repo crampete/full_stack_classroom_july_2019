@@ -1,0 +1,3 @@
+- Go through problems in the `python-practice` folder.
+- Finish how much ever possible https://www.youtube.com/watch?v=rfscVS0vtbw. Preferably code along or just watch.
+- [Small Python Exercises](https://www.practicepython.org/)
