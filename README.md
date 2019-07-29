@@ -33,6 +33,12 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Logistics](day_07/logistics.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_07)
 
+- Day 8
+
+  - [Overview](#day-8-overview)
+  - [Homework](day_08/homework.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_08)
+
 ## Day 5 & 6 Overview
 
 ### Day 5
@@ -76,3 +82,20 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - JavaScript breakdown
   - `onchange` eventlistener
   - `Math.random()` and `Math.floor()`
+
+## Day 8 Overview
+
+- Differences between Python and JavaScript in the browser (priviledges and access)
+- Why Python, famous companies using Python.
+- Python syntax with examples.
+- Python data structures.
+- Exploring Python using [Thonny](https://www.thonny.org).
+- How the web works?
+  - Network, IP and domains
+  - What is the backend, frontend
+  - Ports and web servers
+  - Request and response (just communication)
+  - Talking via the browser vs talking via curl
+- File server using Python SimpleHTTPServer
+- Controlling LED using a server and nodemcu.
+- Simple Flask demo with two routes.
