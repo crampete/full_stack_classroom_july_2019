@@ -76,7 +76,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Try recreating major portions of `live_project_01_random_quotes`. In the process
   - Tell them about Google Fonts
   - Colour schemes
-- Use inspect elements to make iterate faster with HTML and CSS changes.
+- Use inspect elements to iterate faster with HTML and CSS changes.
 - JavaScript linking and flow for project 1.
 - HTML, CSS quickly go through `live_project_02_live_css_changer`.
 - JavaScript breakdown
