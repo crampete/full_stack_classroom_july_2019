@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+    <meta  http-equiv=Expires content="Tue, Sep 20 2018 15:27:22 GMT">
+    <meta http-equiv="Last-Modified" content="Tue, Sep 20 2018 15:27:22 GMT">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="weather, world, Openstreetmap, forecast, Openweather, current" >
+    <meta name="description" content="" >
+    <meta name="author" content="OpenWeatherMap.org">
+    <meta name="domain" content="OpenWeatherMap.org" >        
+    <meta name="p:domain_verify" content="34fe229eab8562dca90f4a5962ff80a9"/>
+    <meta property="title" content="Find" />            
+        <link rel="shortcut icon" href="/themes/openweathermap/assets/vendor/owm/img/icons/favicon.ico" />
+<link rel="icon" href="/themes/openweathermap/assets/vendor/owm/img/icons/logo_16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/themes/openweathermap/assets/vendor/owm/img/icons/logo_32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/themes/openweathermap/assets/vendor/owm/img/icons/logo_60x60.png" sizes="60x60" type="image/png">   
+        <title>Find - OpenWeatherMap</title>
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31601618-1']);
+  _gaq.push(['_setDomainName', 'openweathermap.org']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>        
+        <script src="//code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Array.from,Array.assign,fetch&flags=always,gated"></script>
+<script src='/themes/openweathermap/assets/js/bundle_owm_preload.a897b22b0c2ecd513644.js'></script>            
+        <link href='/themes/openweathermap/assets/css/bundle_owm_styles.a897b22b0c2ecd513644.css' rel="stylesheet"> 
+<link href='/themes/openweathermap/assets/css/stick_footer_panel.a897b22b0c2ecd513644.css' rel="stylesheet">
+<!-- Resources -->
+<!--link href='/themes/openweathermap/assets/vendor/mosaic/fonts/font-awesome/css/font-awesome.min.css' rel="stylesheet"-->            
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic,500italic' rel="stylesheet">                   
+    </head>
+    <body class="body-orange">    
+        <!-- Extra Bar -->
+<div class="mini-navbar mini-navbar-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9  hidden-xs">
+        <a href="//openweathermap.desk.com/" class="first-child" target="_blank">
+        <i class="fa fa-envelope">  </i>  <span class="hidden-xs">Support Center</span></a>
+                <a href="//home.openweathermap.org/users/sign_up" class="pull-right" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'register']);"><i class="fa fa-arrow-circle-down"></i> Sign Up</a>
+        <a href="//home.openweathermap.org/users/sign_in" class="pull-right" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'signin']);"><i class="fa fa-sign-in"></i> Sign In</a>
+                <a href="#" class="pull-right" id="nav-search"><i class="fa fa-search" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'search']);"></i> Weather in your city</a>
+        <a href="#" class="pull-right hidden" id="nav-search-close"><i class="fa fa-times"></i></a>
+        <!-- Search Form -->
+        <form class="pull-right hidden" role="search" id="nav-search-form" action="/find" method="get">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" id="q" name="q" >
+            <span class="input-group-btn">
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 units-selector">
+        <label style="width:100px;animation:none;position:fixed;top:0" onclick="" class="toggle candy blue">
+          <input id="units_check" type="checkbox" checked="checked">
+          <p><span id="metric">  °C</span><span id="imperial">°F</span></p>
+          <a class="slide-button"></a><a class="slide-button"></a>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>    
+        <div class="navbar navbar-dark navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="row">
+      <!-- Navbar Header -->
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 navbar-header">
+        <a class="navbar-brand" href="/">          
+        <img 
+            src="/themes/openweathermap/assets/img/openweather-negative-logo-RGB.png" 
+            width="128" 
+            height="54" 
+            alt="openweather"
+            class="img-responsive"
+        >                
+        </a>             
+      </div>
+      <!-- / Navbar Header --> 
+      <!-- Navbar toggle -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>                  
+      <!-- Navbar Links -->
+      <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="visible-xs"><a href="//home.openweathermap.org/users/sign_in" class="bg-hover-color"><i class="fa fa-sign-in"></i>  Sign In</a></li>
+          <li class="visible-xs"><a href="//home.openweathermap.org/users/sign_up" class="bg-hover-color"><i class="fa fa-arrow-circle-down"></i>  Sign up</a></li>
+          <li class="nav__item"><a href="/city" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'weather']);">Weather</a></li>
+          <li class="nav__item dropdown">
+            <a href="#" class="nav__link dropdown-toggle bg-hover-color" data-toggle="dropdown">Maps <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/weathermap" class="bg-hover-color">Weather maps</a></li>
+              <li><a href="/weathermap?basemap=satellite&cities=false&layer=precipitation&lat=30&lon=-20&zoom=3" class="bg-hover-color"  target="_blank">Current satellite maps</a></li>
+              <li><a href="//owm.io/beautiful_maps" target="_blank" class="bg-hover-color">Beautiful places</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="/guide" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'weather']);">Guide</a></li>
+          <li class="nav__item"><a href="/api" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'api']);">API</a></li>
+          <li class="nav__item"><a href="/price" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'price']);">Price</a></li>         
+          <li class="nav__item"><a href="/examples" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'examples']);">Partners</a></li>
+          <li class="nav__item"><a href="/stations" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'station']);">Stations</a></li>
+          <li class="nav__item"><a href="/widgets-constructor" class="nav__link bg-hover-color" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'widgets']);">Widgets</a></li>
+          <li class="nav__item">
+              <a 
+                href="https://openweather.co.uk/blog/category/weather" 
+                class="nav__link bg-hover-color" 
+                onclick="_gaq.push(['_trackEvent', 'Navbar', 'Main', 'news']);"
+                target="_blank"
+              >
+                Blog
+              </a>
+          </li>
+        </ul>        
+        <!-- Search Form (xs) -->
+        <!--
+        <form class="navbar-form navbar-left visible-xs" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Go!</button>
+        </form>
+        -->
+        <!-- / Search Form (xs) -->
+      </div>
+      <!-- / Navbar Links -->
+    </div>
+  </div>
+  <!-- / container -->
+</div>
+<!-- / navbar --> 
+        <div id="notes_block"></div>
+        <main class="wrapper"> 
+                                    <div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h2 class="headline first-child text-color"><span class="border-color">Weather in your city</span></h2>
+</div>
+</div> <!-- / .row -->
+</div> <!-- / .container -->
+    
+
+<div class="color-jumbotron jumbotron-green">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <form class="form-inline text-center first-child" 
+                    onsubmit="FindCity(); return false"
+                    role="form" id="searchform" action="#" method="get">
+                <div class="form-group">
+                  <label class="sr-only" for="help-search">Search</label>
+                  
+                  <input   class="form-control border-color col-sm-12" 
+                    id="search_str" name="q" value="chennai"
+                    onfocus="this.value = (this.value=='London, UK')? '' : this.value;">
+                    
+                </div>
+                <button type="submit" class="btn btn-color"><i class="fa fa-question-circle"></i> Search</button>
+              </form>
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+</div> <!-- / .color-jumbotron -->
+      
+    <div id='pbar' class="progress progress-striped active" style="visibility: none">
+      <div class="bar" style="width: 100%;"></div>
+    </div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+<div class="tab-pane active" id="forecast-list">
+    <div id="forecast_list_ul"></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+    <h3>Search engine is very flexible. How it works:</h3>
+    <ul>
+    <li> To make it more precise put the city's name, comma,  2-letter country code (ISO3166). You will get all proper cities in chosen country.
+<br>The order is important - the first is city name then comma then country. Example - London, GB or New York, US.</li>
+    </ul>
+</div>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+'use strict';
+
+$("#pbar").hide("fast");
+
+function ShowAlertMess(mess)
+{
+  	var html = '<div class="alert alert-warning" role="alert"><a class="close" data-dismiss="alert" href="#">×</a>'+mess+'</div>';
+    $("#forecast_list_ul").html(html);
+}    
+
+function getSearchData(JSONobject) {
+  //console.log( JSONobject  );
+  //JSONobject = ParseJson(JSONtext);
+
+  var city = JSONobject.list;
+  if( city.length == 0 ) {
+    ShowAlertMess( 'Not found' );
+    return;
+  }
+
+  var html = '';
+
+  for(var i = 0; i <  JSONobject.list.length; i ++){
+
+
+    var name = JSONobject.list[i].name +', '+JSONobject.list[i].sys.country;
+
+    var temp = Math.round(10*(JSONobject.list[i].main.temp -273.15))/10 ;
+    var tmin = Math.round(10*(JSONobject.list[i].main.temp_min -273.15)) / 10;
+    var tmax = Math.round(10*(JSONobject.list[i].main.temp_max -273.15)) / 10 ;
+
+    var text = JSONobject.list[i].weather[0].description;
+    var img =  "http://openweathermap.org/img/wn/" +JSONobject.list[i].weather[0].icon + "@2x.png";
+    var flag = "http://openweathermap.org/images/flags/" +JSONobject.list[i].sys.country.toLowerCase()  + ".png";
+    var gust = JSONobject.list[i].wind.speed;
+    var pressure = JSONobject.list[i].main.pressure ;
+    var cloud=JSONobject.list[i].clouds.all ; 
+
+    
+    var row = '<tr><td><img src="' + img + '" width="50" height="50"></td><td><b><a href="/city/' + JSONobject.list[i].id + '"> ' + name + '</a></b> <img src="' + flag + '" ><b><i> ' + text + '</i></b><p><span class="badge badge-info">' + temp + '°С </span> temperature from '+ tmin + ' to ' + tmax + ' °С, wind ' + gust+ ' m/s. clouds ' + cloud + ' %, ' + pressure + ' hpa</p><p>Geo coords <a href="/weathermap?zoom=12&lat=' + JSONobject.list[i].coord.lat + '&lon=' + JSONobject.list[i].coord.lon + '">[' + JSONobject.list[i].coord.lat + ', ' + JSONobject.list[i].coord.lon + ']</a></p></td></tr>';
+            
+    
+   /* var column = `<td><img src="${img}"></td><td><b><a href="/city/${JSONobject.list[i].id}"> ${name}</a></b> <img src="${flag}"><b><i> ${text}</i></b><p><span class="badge badge-info">${temp} °С </span> temperature from ${tmin} to ${tmax}°С, wind ${gust} m/s. clouds ${cloud}%, ${pressure} hpa</p><p>Geo coords <a href="/weathermap?zoom=12&lat=${JSONobject.list[i].coord.lat}&lon=${JSONobject.list[i].coord.lon}">[${JSONobject.list[i].coord.lat}, ${JSONobject.list[i].coord.lon}]</a></p></td>`; 
+    var row = `<tr>${column}</tr>`;
+    */
+    
+    html = html + row;    
+
+  }
+
+   /* html=`<table class="table">${html}</table>`; */
+   html='<table class="table">' + html + '</table>';
+
+  $("#forecast_list_ul").html(html);
+  //ShowInfoMess(html);
+  $("#pbar").hide("fast");
+
+}
+
+function FindCity() {
+ // $("#pbar").style.visibility = 'visible';
+  $("#pbar").show("fast");
+  $("#forecast_list_ul").html('');
+  var param = document.getElementById('search_str').value;
+  var jsonurl = "/data/2.5/find?callback=?&q="+param+ "&type=like&sort=population&cnt=30&appid=b6907d289e10d714a6e88b30761fae22";
+  $.getJSON(jsonurl, getSearchData).error();
+  return false; 
+}
+
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+var q = GetURLParameter('q');
+if ( q ) {
+FindCity();
+}
+      
+    
+</script>     
+                                    <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- OWM long bottom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9649553505534207"
+     data-ad-slot="1070308379"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>                    </div>
+                </div>                
+            </div>
+                        
+        </main>
+        <div id="stick-footer-panel"></div>
+                    <!-- Footer -->
+<footer class="footer-dark">
+  <div class="container">
+    <div class="row">
+      <!-- API -->
+      <div class="col-sm-4">
+        <h3 class="text-color">Weather in your city</h3>
+        <ul>
+          <li><a href="../find?q=">Find your city</a></li>
+          <li><a href="../weathermap">Weather maps</a></li>
+        </ul>
+        <h3 class="text-color">Weather APIs</h3>
+        <div class="content">
+          <ul>
+            <li><a href="../appid">How to start</a></li>
+            <li><a href="../api">Weather APIs for developers</a></li>
+            <li><a href="../current">Current weather</a></li>
+            <li><a href="../forecast5">5 day / 3 hour weather forecast</a></li>
+            <li><a href="../forecast16">16 day / daily weather forecast</a></li>
+            <li><a href="../history">Hourly historical data</a></li>
+            <li><a href="../history-bulk">History bulk</a></li>
+            <li><a href="../examples">Examples of API use</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Map layers -->
+      <div class="col-sm-4">
+        <h3 class="text-color">Map layers</h3>
+        <div class="content">
+          <ul>
+            <li><a href="../api/weathermaps#examples"> Examples of weather map layers</a>
+            <li><a href="../api/weathermaps#legend"> Map styles legend</a></li>
+            <li><a href="../api/weathermaps#library"> Libraries to connect weather layers</a></li>
+          </ul>
+          <h3 class="text-color">How to subscribe</h3>
+          <ul>
+            <li><a href="../price">Price-list</a></li>
+            <li><a href="../price_subscribe">Subscribe to APIs</a></li>
+          </ul>
+          <div class="alert alert-info">
+            Found a bug? Have a question or idea? Welcome to
+            <a href="https://openweathermap.desk.com/customer/portal/emails/new" class="alert-link" target="_blank">Support center
+            </a>
+          </div>
+          <div class="clearfix">
+          </div>
+        </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-sm-4">
+        <h3 class="text-color">Weather station network</h3>
+        <ul>
+          <li><a href="../stations">How to connect your weather station</a></li>
+        </ul>
+        <h3 class="text-color">About</h3>
+        <ul>
+              <li><a href="/about">About company</a></li>
+            <li><a href="https://openweather.co.uk/team" target="_blank">Team</a></li>
+            <li><a href="/technology">Weather model</a></li>
+        </ul>
+        <h3 class="text-color">Go Social</h3>
+        <ul>
+          <li>
+            <p>Follow OpenWeatherMap on&nbsp;</p>
+            <div class="content social">
+              <div class="main-footer__socials"><a class="icon-social" href="https://www.facebook.com/groups/270748973021342" title="facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="icon-social" href="https://twitter.com/OpenWeatherMap" title="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="icon-social" href="https://www.linkedin.com/company/9816754" title="linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a class="icon-social" href="https://www.instagram.com/openweathermap/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="icon-social" href="https://t.me/openweathermap" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a><a class="icon-social" href="https://github.com/search?q=openweathermap&ref=cmdform" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+            </div>
+          </li>
+        </ul>       
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <hr>
+      </div>
+    </div>
+    <!-- Copyrights -->
+    <div class="row">
+      <div class="col-sm-12">
+      <p>
+       <a class="main-footer__copyright-link" href="https://openweather.co.uk/storage/app/media/Terms/Openweather_terms_and_conditions_of_sale.pdf"  target="_blank">Terms and conditions of sale</a>
+      |
+            <a class="main-footer__copyright-link" href="https://openweather.co.uk/privacy-policy"  target="_blank">Privacy policy</a>
+      |
+      <a class="main-footer__copyright-link" href="https://openweather.co.uk/storage/app/media/Terms/Openweather_website_terms_and_conditions_of_use.pdf" target="_blank">Websites terms and conditions of use</a>
+      |
+      <a class="main-footer__copyright-link" href="https://openweather.co.uk/team"  target="_blank">Our team</a></p>
+      
+      
+        <p>© 2012 — <span id="template-current-year">2018</span> OpenWeather ® All rights reserved. </p>
+      </div>
+    </div>
+  </div>
+</footer>   
+             
+        <script src="https://cdn.ravenjs.com/3.6.1/raven.min.js"></script>
+<script>Raven.config('http://66df88eb63e94f27964b84031e49b358@sentry.owm.io/16').install()</script>  
+        <script src='/themes/openweathermap/assets/js/bundle_owm_postload.a897b22b0c2ecd513644.js'></script>
+<script src='/themes/openweathermap/assets/js/stick_footer_panel.a897b22b0c2ecd513644.js'></script>           
+    </body>
+</html>
