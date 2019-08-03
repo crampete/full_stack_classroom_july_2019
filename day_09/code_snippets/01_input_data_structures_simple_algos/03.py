@@ -1,6 +1,10 @@
+# print a list of students which contains even more lists inside it
+# nested for loops
+
 rows_of_students = [
-    ['alan', 'joshiba', 'ramya', 'sangeetha'], 
-    ['kishore', 'arivuselvan', 'jegan', 'syed', 'anand', 'ashwin', 'sachin', 'edwin'], 
+    ['alan', 'joshiba', 'ramya', 'sangeetha'],
+    ['kishore', 'arivuselvan', 'jegan', 'syed',
+        'anand', 'ashwin', 'sachin', 'edwin'],
     ['sumaya', 'likitha', 'meena', 'abirami', 'kokila']
 ]
 

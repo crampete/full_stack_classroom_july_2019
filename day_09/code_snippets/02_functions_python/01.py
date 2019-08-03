@@ -1,3 +1,8 @@
+# write two functions
+# One function to get some details from the user and store it in a dictionary
+# Another function that prints the details so collected.
+
+
 def ask_questions_get_user():
     user_details = {}
 
@@ -5,7 +10,7 @@ def ask_questions_get_user():
     print(f"Hi {user_details['name']}")
     user_details['age'] = input("Please enter your age.\n")
     user_details['city'] = input("Which city/town do you reside in?\n")
-    
+
     return user_details
 
 
@@ -15,8 +20,10 @@ def print_user_details(user_details):
     print("Printing student details...")
     print("...")
     print("...")
-    print(f"My name is {user_details['name']}. I am {user_details['age']} old and I reside in {user_details['city']}")
-    
+    print(
+        f"My name is {user_details['name']}. I am {user_details['age']} old and I reside in {user_details['city']}")
+
+
 while True:
     more_names = input("Any more user names? Enter y or n.\n")
 

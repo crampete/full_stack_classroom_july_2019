@@ -1,3 +1,4 @@
+# sort a list in ascending and descending order
 my_marks = [12, 15, 20, 40, 30, 25, 10, 100]
 
 my_marks.sort()

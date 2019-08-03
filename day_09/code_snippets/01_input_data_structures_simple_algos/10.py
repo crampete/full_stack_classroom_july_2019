@@ -1,8 +1,11 @@
 # fibonnaci
+# sequence of numbers derived from adding the preceeding two numbers
+# First two numbers are 1 and 1
+# 1, 1, 2, 3, 5, 8, 13 and so on.
 
 
 # bad but clear way of doing it
-# better way given in 02_functions_python folder :)
+# better ways exist :)
 a = 1
 b = 1
 

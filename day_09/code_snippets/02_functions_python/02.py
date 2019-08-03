@@ -1,3 +1,7 @@
+# write a function that takes a list and filters
+# out all the odd numbers from it
+
+
 def filter_even(list_of_numbers):
     new_list = []
 

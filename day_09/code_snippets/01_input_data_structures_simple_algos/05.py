@@ -1,3 +1,4 @@
+# get the keys and values of a dictionary using a for loop
 laptop_mapping = {
     'boobalan': 'hp',
     'sadam': 'lenovo',
@@ -11,6 +12,6 @@ for key, value in laptop_mapping.items():
 
 
 print("\n\nMethod 2\n\n")
-    
+
 for key in laptop_mapping.keys():
     print(f"{key} uses a {laptop_mapping[key]} laptop.")
