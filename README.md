@@ -39,6 +39,11 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Homework](day_08/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_08)
 
+- Day 9
+  - [Overview](#day-9-overview)
+  - [Homework](day_09/homework.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_09)
+
 ## Day 5 & 6 Overview
 
 ### Day 5
@@ -99,3 +104,12 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - File server using Python SimpleHTTPServer
 - Controlling LED using a server and nodemcu.
 - Simple Flask demo with two routes.
+
+## Day 9 Overview
+
+- What is a REPL? Using the Python REPL.
+- Input and some operations on data structures.
+- Simple functions in Python
+- What is a CSV? Creating CSVs using Python.
+- Code organisation. Breaking code into files and folders.
+- Brief them about CodeChef, the certification and the opportunities they offer.
