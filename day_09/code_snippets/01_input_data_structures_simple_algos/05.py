@@ -9,6 +9,10 @@ laptop_mapping = {
 
 for key, value in laptop_mapping.items():
     print(f"{key} uses a {value} laptop.")
+    # bad way. Using + operator
+    print(key + " uses a " + value + " laptop.")
+    # for those with windows 7 SP1 using python3.4
+    print("{} uses a {} laptop.".format(key, value))
 
 
 print("\n\nMethod 2\n\n")
