@@ -113,3 +113,20 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - What is a CSV? Creating CSVs using Python.
 - Code organisation. Breaking code into files and folders.
 - Brief them about CodeChef, the certification and the opportunities they offer.
+
+## Day 10 Overview
+
+- Different types of clients (command line, web browser)
+- Clear distinction between client and server. (Client Server model)
+- Writing a few clients. [Code Here](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_10/code_snippets/01_clients_python)
+- Basic changes in any web application (Create, Read, Update and Delete) also called CRUD.
+- Corresponding HTTP Verbs or Methods (GET, POST, PUT and DELETE).
+- HTTP Status Codes overview.
+- Google Chrome network inspection basics.
+- Revision from last class
+  - IP addresses are domains
+  - Port Numbers
+  - Request Response Lifecycle
+  - Web Servers - What are they and why do we use them instead of writing them ourselves
+  - Routes from a link
+- Coding a simple backend. Writing a few endpoints and trying them out in the browser.
