@@ -1,1 +1,2 @@
 - [HTTP Status Codes via Valentines Day Comics](https://medium.com/@hanilim/http-codes-as-valentines-day-comics-8c03c805faa0)
+- [Very Basic Flask App](https://www.youtube.com/watch?v=ZVGwqnjOKjk) - It's just a 8 minutes video. Main idea is revision :)
