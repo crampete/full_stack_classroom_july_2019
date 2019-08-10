@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ company }}</title>
+  </head>
+  <body>
+    <h1>{{ company }}</h1>
+    <table border="1">
+      {% for row in result %}
+
+      <tr>
+        {% for cell in row %}
+        <td>
+          {{ cell }}
+        </td>
+
+        {% endfor %} {% endfor %}
+      </tr>
+    </table>
+  </body>
+</html>
