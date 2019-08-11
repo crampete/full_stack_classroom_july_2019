@@ -1,0 +1,102 @@
+/* All the following styles are styles for small screens less than 576px
+We try to be as generic as possible
+We overwrite on a per case basis */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  /* using rem is better than px in general*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav {
+  background-color: #293852;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #eaebed;
+}
+
+nav ul li:hover {
+  background-color: #2e88c0;
+}
+
+nav #nav-links {
+  list-style: none;
+}
+
+/* divs by default take 100% width */
+#box-1 {
+  height: 300px;
+  background-color: #a3bac3;
+}
+
+#box-2 {
+  height: 300px;
+  background-color: #e2bac3;
+}
+
+#box-3 {
+  height: 300px;
+  background-color: #fdef9a;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  nav ul > li + li {
+    margin-left: 2rem;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  #box-1 {
+    width: 50%;
+    float: left;
+  }
+  #box-2 {
+    width: 50%;
+    float: left;
+  }
+
+  #box-3 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  nav ul > li + li {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #box-1 {
+    width: 33.3%;
+    float: left;
+  }
+  #box-2 {
+    width: 33.3%;
+    float: left;
+  }
+
+  #box-3 {
+    width: 33.3%;
+    float: left;
+  }
+}
