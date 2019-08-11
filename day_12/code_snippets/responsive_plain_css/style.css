@@ -32,10 +32,6 @@ nav ul li:hover {
   background-color: #2e88c0;
 }
 
-nav #nav-links {
-  list-style: none;
-}
-
 /* divs by default take 100% width */
 #box-1 {
   height: 300px;
