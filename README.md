@@ -53,6 +53,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 
 - Day 11
   - [Overview](#day-11-overview)
+  - [Homework](day_11/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_11)
 
 ## Day 5 & 6 Overview
