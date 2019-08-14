@@ -52,9 +52,15 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_10)
 
 - Day 11
+
   - [Overview](#day-11-overview)
   - [Homework](day_11/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_11)
+
+- Day 12
+  - [Overview](#day-12-overview)
+  - [Homework](day_12/homework.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_12)
 
 ## Day 5 & 6 Overview
 
@@ -151,3 +157,20 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Python Jinja Templates.
 - Template with variables.
 - Templates with for loops.
+
+## Day 12 Overview
+
+- What is mobile responsiveness and why?
+- Use case for reset.css with a small demo.
+- Websites are nothing but boxes.
+- HTML for the [site](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_12/code_snippets/responsive_plain_css).
+- Touched upon semantic HTML.
+- What is Bootstrap and you don't need it. You can write responsive with pure HTML and CSS alone.
+- Brief intro to `rem` and why it's better than pixels. Less hard coding.
+- Mobile First Approach in CSS.
+- Code CSS using mobile first approach.
+- CSS Media Queries and their uses (why those breakpoints?)
+- Overwrite rules for certain devices using CSS.
+- Block elements, inline elements and inline-block.
+- `li + li` selector for margin spacing.
+- How to link images, CSS files within HTML. Relative paths (coming out of folders using ../)
