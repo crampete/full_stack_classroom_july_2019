@@ -58,6 +58,8 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_11)
 
 - Day 12
+  ![](media/responsive_plain_html_css_demo.gif)
+
   - [Overview](#day-12-overview)
   - [Homework](day_12/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_12)
