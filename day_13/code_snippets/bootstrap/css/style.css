@@ -1,0 +1,51 @@
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif !important;
+}
+.jumbotron {
+  background: url(../images/hero.jpg) no-repeat bottom center / cover;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+  color: #f9f7f7;
+}
+
+.jumbotron p {
+  color: #f9f7f7;
+}
+
+.course-box {
+  text-align: center;
+}
+
+#courses {
+  background-color: #f9f7f7;
+  color: #112d4e;
+}
+
+#courses img {
+  border-radius: 1rem;
+}
+
+#features {
+  background-color: #dbe2ef;
+  color: #112d4e;
+}
+
+#features img {
+  border-radius: 5rem;
+}
+
+footer {
+  background-color: #112d4e;
+  color: #f9f7f7;
+}
