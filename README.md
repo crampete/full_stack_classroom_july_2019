@@ -176,3 +176,17 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Block elements, inline elements and inline-block.
 - `li + li` selector for margin spacing.
 - How to link images, CSS files within HTML. Relative paths (coming out of folders using ../)
+
+## Day 13 Overview
+
+- Why Bootstrap and what is it?
+- Bootstrap starter template to start coding.
+- Reading documentation and using Bootstrap (navbar example)
+- Bootstrap grid system. Thinking of websites like boxes and in terms of rows and columns.
+- `rows` and `col` in Bootstrap
+- Using different sizes like `xs`, `sm`, `md` and `lg`.
+- Container class.
+- Fake text from Lorem Ipsum.
+- Utility classes like `mt`, `mx`, `text-center` and so on.
+- Photos from a stock photography website.
+- Jumbotron with Background image.
