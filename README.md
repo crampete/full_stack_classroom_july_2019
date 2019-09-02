@@ -66,7 +66,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 
 - Day 13 & Day 14
 
-  - [Overview](#day-13---14-overview)
+  - [Overview](#day-13--14-overview)
   - [Homework](day_13_n_14/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_13_n_14/code_snippets)
 
