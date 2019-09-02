@@ -64,6 +64,12 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Homework](day_12/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_12)
 
+- Day 13 & Day 14
+
+  - [Overview](#day-13---14-overview)
+  - [Homework](day_13_n_14/homework.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_13_n_14/code_snippets)
+
 ## Day 5 & 6 Overview
 
 ### Day 5
@@ -177,7 +183,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - `li + li` selector for margin spacing.
 - How to link images, CSS files within HTML. Relative paths (coming out of folders using ../)
 
-## Day 13 Overview
+## Day 13 & 14 Overview
 
 - Why Bootstrap and what is it?
 - Bootstrap starter template to start coding.
@@ -185,8 +191,10 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Bootstrap grid system. Thinking of websites like boxes and in terms of rows and columns.
 - `rows` and `col` in Bootstrap
 - Using different sizes like `xs`, `sm`, `md` and `lg`.
-- Container class.
+- `container` class.
 - Fake text from Lorem Ipsum.
 - Utility classes like `mt`, `mx`, `text-center` and so on.
 - Photos from a stock photography website.
 - Jumbotron with Background image.
+- `offset-` and `img-fluid` in Bootstrap.
+- Built the website given in code snippets using Bootstrap.
