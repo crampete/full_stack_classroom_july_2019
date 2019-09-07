@@ -1,0 +1,32 @@
+#main-app-wrapper {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header ul {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+header ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 2rem;
+}
+.student-info {
+  background-color: #dadada;
+  color: #204969;
+  padding: 1rem;
+}
+
+.student-info + .student-info {
+  margin-top: 2rem;
+}
+
+.student-field {
+  text-decoration: underline;
+  font-weight: 900;
+  text-transform: uppercase;
+}

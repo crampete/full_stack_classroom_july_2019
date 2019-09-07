@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.pokemon-image {
+  max-width: 300px;
+}
+
+button + button {
+  margin-left: 2rem;
+}
