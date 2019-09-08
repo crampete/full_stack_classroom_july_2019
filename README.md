@@ -70,6 +70,10 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Homework](day_13_n_14/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_13_n_14/code_snippets)
 
+- Day 15 & Day 16
+  - [Overview](#day-15--16-overview)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_15_n_16/code_snippets)
+
 ## Day 5 & 6 Overview
 
 ### Day 5
@@ -198,3 +202,20 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Jumbotron with Background image.
 - `offset-` and `img-fluid` in Bootstrap.
 - Built the website given in code snippets using Bootstrap.
+
+## Day 15 & 16 Overview
+
+- React.js Intro.
+- Intermingling HTML, CSS and JavaScript together.
+- Node.js vs JavaScript on the browser.
+- Brief intro to npm.
+- Creating a new React.js project using `create-react-app`.
+- React folder structure.
+- Creating a React Component.
+- Using Props in Components.
+- Difference between state and props.
+- E-commerce product page using state and props.
+- Using npm to install 3rd party packages.
+- Overview of `package.json` file.
+- Jist of the `node_modules` folder.
+- Creating multiple pages using `react-router-dom`.
