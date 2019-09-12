@@ -64,15 +64,15 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Homework](day_12/homework.md)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_12)
 
-- Day 13 & Day 14
+- Day 17 & Day 18
 
-  - [Overview](#day-13--14-overview)
-  - [Homework](day_13_n_14/homework.md)
-  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_13_n_14/code_snippets)
+  - [Overview](#day-17--18-overview)
+  - [Homework](day_17_n_18/homework.md)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_17_n_18/code_snippets)
 
-- Day 15 & Day 16
-  - [Overview](#day-15--16-overview)
-  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_15_n_16/code_snippets)
+- Day 19 & Day 20
+  - [Overview](#day-19--20-overview)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_19_n_20/code_snippets)
 
 ## Day 5 & 6 Overview
 
@@ -187,7 +187,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - `li + li` selector for margin spacing.
 - How to link images, CSS files within HTML. Relative paths (coming out of folders using ../)
 
-## Day 13 & 14 Overview
+## Day 17 & 18 Overview
 
 - Why Bootstrap and what is it?
 - Bootstrap starter template to start coding.
@@ -203,7 +203,7 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - `offset-` and `img-fluid` in Bootstrap.
 - Built the website given in code snippets using Bootstrap.
 
-## Day 15 & 16 Overview
+## Day 19 & 20 Overview
 
 - React.js Intro.
 - Intermingling HTML, CSS and JavaScript together.
