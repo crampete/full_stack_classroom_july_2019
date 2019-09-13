@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #f9f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+#login-box {
+  margin-top: 10%;
+  color: #112d4e !important;
+}
+#login-inner {
+  max-width: 400px;
+  background-color: #dbe2ef;
+  border-radius: 5%;
+}
+
+#login-box button {
+  min-width: 80px;
+  color: #112d4e !important;
+}
+
+#profile .mycard {
+  max-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(245, 147, 59, 1);
+}
+
+#profile img {
+  width: 100%;
+  height: auto;
+}
