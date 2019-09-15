@@ -71,8 +71,14 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_17_n_18/code_snippets)
 
 - Day 19 & Day 20
+
   - [Overview](#day-19--20-overview)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_19_n_20/code_snippets)
+
+- Day 21 & Day 22
+  - [Overview](#day-21--22-overview)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_21_n_22/code_snippets)
+  - [Homework](day_21_n_22/homework.md)
 
 ## Day 5 & 6 Overview
 
@@ -219,3 +225,20 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Overview of `package.json` file.
 - Jist of the `node_modules` folder.
 - Creating multiple pages using `react-router-dom`.
+
+## Day 21 & 22 Overview
+
+- React Bootstrap.
+- Using normal Bootstrap classes or React Components.
+- Reading the documentation of React Bootstrap.
+- Revisited `state` and `props`, when to use `props` and when to use `state` etc.
+- Using state in input boxes (controlled components).
+- Changing state via an `onChange` event listener.
+- React router for login and profile pages.
+- Why Git?
+- Difference between Git and GitHub.
+- Installing Git and choosing Visual Studio Code as the default editor.
+- Git stage and commits.
+- Making a new Git repo locally, pushing it to GitHub.
+- Cloning a public repository using `git clone`.
+- Updating code on one's local system using `git pull`.

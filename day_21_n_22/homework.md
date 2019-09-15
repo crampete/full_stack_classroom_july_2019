@@ -1,0 +1,2 @@
+- [React Full Course by FreeCodeCamp](https://www.youtube.com/watch?v=DLX62G4lc44)
+- Start uploading your projects to GitHub now that you know how to use Git :D
