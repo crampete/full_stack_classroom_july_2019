@@ -20,9 +20,20 @@ result = student_collection.find_one({"name": "jagan"})
 print(result)
 
 
+print("\nSingle Result\n")
+print(student_collection.find_one({'name': "sachin", 'place': "Chennai"}))
+
+
 print("\n\nMultiple Results\n\n")
 # multiple results
 results = student_collection.find({'name': 'Karthik Raja'})
+
+for result in results:
+    print(result)
+
+
+print("\n\nAll Document\n\n")
+results = student_collection.find({})
 
 for result in results:
     print(result)
