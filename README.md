@@ -242,3 +242,14 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Making a new Git repo locally, pushing it to GitHub.
 - Cloning a public repository using `git clone`.
 - Updating code on one's local system using `git pull`.
+
+## Day 23 & 24 Overview
+
+- Revisited Mongo. Quick overview.
+- Using a free cluster on Mongo Atlas.
+- Using a GUI tool to work your way around Mongo.
+- Basic connection using PyMongo.
+- Choosing a collection and CRUD operations on the collection using various filters.
+- Revisited IP Addresses and port number essentials.
+- Revisited HTTP Routes and methods like GET, POST, PUT and DELETE.
+- Creating RESTful routes (incomplete as of now) for a resource using Flask.
