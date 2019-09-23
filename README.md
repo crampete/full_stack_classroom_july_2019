@@ -76,9 +76,15 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_19_n_20/code_snippets)
 
 - Day 21 & Day 22
+
   - [Overview](#day-21--22-overview)
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_21_n_22/code_snippets)
   - [Homework](day_21_n_22/homework.md)
+
+- Day 23 & Day 24
+  - [Overview](#day-23--24-overview)
+  - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_23_n_24/code_snippets)
+  - [Homework](day_23_n_24/homework.md)
 
 ## Day 5 & 6 Overview
 
