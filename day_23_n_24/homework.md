@@ -1,0 +1,2 @@
+- [REST API](https://www.youtube.com/watch?v=qVTAB8Z2VmA)
+- Try some CRUD operations using PyMongo.
