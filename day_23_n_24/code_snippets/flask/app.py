@@ -34,12 +34,11 @@ def all_students():
 # get particular student
 @app.route('/student/<doc_id>', methods=["GET"])
 def student_info(doc_id):
-    result = xyz_collection.find({"_id": ObjectId(doc_id)})
-
-    # result is a list. Print and check :)
-    # we just want the first and only document anyways
-    result_as_json = dumps(result[0])
-    return result_as_json
+    result = xyz_collection.find_one({"_id": ObjectId(doc_id)})
+    
+    # CONVERTING MONGO OBJ TO JSON
+    result["_id"] = str(result["_id"])
+    return jsonify(result)
 
 
 @app.route('/student/<doc_id>', methods=["PUT"])
