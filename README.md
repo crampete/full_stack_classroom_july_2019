@@ -86,6 +86,10 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
   - [Code](https://github.com/crampete/full_stack_classroom_july_2019/tree/master/day_23_n_24/code_snippets)
   - [Homework](day_23_n_24/homework.md)
 
+- Day 25
+  - [Overview](#day-25-overview)
+
+
 ## Day 5 & 6 Overview
 
 ### Day 5
@@ -259,3 +263,12 @@ Homework, resources, code snippets, live projects and learning hacks can be foun
 - Revisited IP Addresses and port number essentials.
 - Revisited HTTP Routes and methods like GET, POST, PUT and DELETE.
 - Creating RESTful routes (incomplete as of now) for a resource using Flask.
+
+## Day 25 Overview
+
+- Refer code from the previous day.
+- Finish RESTful routes for the resource.
+- Testing routes using Postman.
+- Methods are just conventions.
+- Interview prep and tips.
+
